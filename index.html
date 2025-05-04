@@ -1,0 +1,69 @@
+<!-- Project Name: To-Do List Application -->
+<!-- Description: A simple to-do list application that allows users to add and manage tasks -->
+
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+<html lang="en">
+<!-- Specifies the language of the document as English -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Sets the character encoding for the document to UTF-8 -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Ensures the page is responsive and scales properly on different devices -->
+
+  <title>To-Do List</title>
+  <!-- Sets the title of the webpage, displayed in the browser tab -->
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- Links an external CSS file for styling the webpage -->
+</head>
+
+<body>
+  <!-- Main content of the webpage -->
+
+  <div class="container">
+    <!-- A container div to group the content for styling and layout -->
+
+    <h2 id="greeting"></h2>
+    <!-- A dynamic greeting message based on the time of day -->
+
+    <h1>My To-Do List</h1>
+    <!-- Main heading of the webpage -->
+
+    <form id="todo-form">
+      <!-- A form element for adding new tasks to the to-do list -->
+
+      <input type="text" id="todo-input" placeholder="Enter a task..." maxlength="50" />
+      <!-- Input field for entering a new task, with a placeholder text and a character limit -->
+
+      <p id="char-counter">50 characters remaining</p>
+      <!-- Displays the remaining character count dynamically -->
+
+      <button type="submit">Add</button>
+      <!-- Submit button to add the entered task to the to-do list -->
+    </form>
+
+    <div id="progress-container">
+      <!-- A container for the progress bar and its text -->
+
+      <progress id="progress-bar" value="0" max="100"></progress>
+      <!-- A progress bar to visually represent the percentage of completed tasks -->
+
+      <span id="progress-text">0% completed</span>
+      <!-- Text to display the percentage of completed tasks -->
+    </div>
+
+    <ul id="todo-list"></ul>
+    <!-- An unordered list where the tasks will be dynamically added -->
+
+    <button id="clear-all">Clear All</button>
+    <!-- A button to clear all tasks from the to-do list -->
+  </div>
+
+  <script src="script.js"></script>
+  <!-- Links an external JavaScript file for adding interactivity -->
+</body>
+
+</html>

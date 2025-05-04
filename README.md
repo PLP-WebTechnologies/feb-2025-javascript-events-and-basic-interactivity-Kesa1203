@@ -1,6 +1,6 @@
 # 🎯 JavaScript Event Handling & Interactive Elements Assignment
 
-Welcome to the **ultimate JavaScript playground**! 🎉 This assignment is where we turn boring web pages into dynamic, responsive, *alive* experiences. Get ready to master **event handling**, build **interactive components**, and validate forms like a pro! 💪
+Welcome to the **ultimate JavaScript playground**! 🎉 This assignment is where we turn boring web pages into dynamic, responsive, *alive* experiences. Get ready to master like a pro! 💪
 
 ## 📁 Assignment Structure
 

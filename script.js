@@ -104,53 +104,6 @@ function getRandomColor() {
   return colors[Math.floor(Math.random() * colors.length)]; // Return a random color from the array
 }
 
-// Form validation
-const validationForm = document.getElementById('validation-form'); // Form for validating email and password
-const emailInput = document.getElementById('email-input'); // Input field for email
-const passwordInput = document.getElementById('password-input'); // Input field for password
-const emailError = document.getElementById('email-error'); // Error message for email validation
-const passwordError = document.getElementById('password-error'); // Error message for password validation
 
-validationForm.addEventListener('submit', (e) => {
-  e.preventDefault(); // Prevent the default form submission
-  let isValid = true; // Flag to track if the form is valid
-
-  // Email validation
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regular expression for email validation
-  if (!emailRegex.test(emailInput.value)) {
-    emailError.textContent = 'Please enter a valid email address.'; // Display error message for invalid email
-    isValid = false; // Set the form as invalid
-  } else {
-    emailError.textContent = ''; // Clear the error message if the email is valid
-  }
-
-  // Password validation
-  if (passwordInput.value.length < 8) {
-    passwordError.textContent = 'Password must be at least 8 characters long.'; // Display error message for short password
-    isValid = false; // Set the form as invalid
-  } else {
-    passwordError.textContent = ''; // Clear the error message if the password is valid
-  }
-
-  if (isValid) {
-    alert('Form is valid!'); // Show a success message if the form is valid
-  }
-});
-
-// Image gallery hover effect
-const galleryImages = document.querySelectorAll('.gallery-image'); // Select all images in the gallery
-galleryImages.forEach((img) => {
-  img.addEventListener('click', () => alert(`You clicked on ${img.alt}`)); // Display an alert with the image's alt text when clicked
-});
-
-// Tabs functionality
-const tabButtons = document.querySelectorAll('.tab-btn'); // Select all tab buttons
-const tabContents = document.querySelectorAll('.tab-content'); // Select all tab content sections
-tabButtons.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    tabContents.forEach((content) => content.classList.remove('active')); // Hide all tab content
-    document.getElementById(btn.dataset.tab).classList.add('active'); // Show the content for the clicked tab
-  });
-});
 
 
